@@ -504,6 +504,7 @@ img {
 }
 
 .journal-index {
+  z-index: 1;
   cursor: pointer;
   position: fixed;
   pointer-events: none;
