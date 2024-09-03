@@ -10,27 +10,27 @@
     $($(this).data('collection')).addClass('active');
   });
 
-  // Journal Open
-  $('.journal-index-button').on('click', function () {
+  // Blog Open
+  $('.blog-index-button').on('click', function () {
     // Calculate scrollbar width once
     var scrollbarWidth = $(window).outerWidth() - $(document).width();
 
-    // Toggle classes and apply padding for journal open
+    // Toggle classes and apply padding for blog open
     $('body').addClass('fixed');
-    $('.journal-index').addClass('active');
+    $('.blog-index').addClass('active');
     $('body').css('paddingRight', scrollbarWidth);
   });
 
-  // Journal Close
-  $('.journal-index-list-item a, .journal-index').on('click', function () {
-    // Toggle classes and reset padding for journal close
+  // Blog Close
+  $('.blog-index-list-item a, .blog-index').on('click', function () {
+    // Toggle classes and reset padding for blog close
     $('body').removeClass('fixed');
-    $('.journal-index').removeClass('active');
+    $('.blog-index').removeClass('active');
     $('body').css('paddingRight', '0');
   });
 
   // Prevent propagation
-  $(".journal-index-box, .journal-index-list").click(function(e) {
+  $(".blog-index-box, .blog-index-list").click(function(e) {
     e.stopPropagation();
   });
 
