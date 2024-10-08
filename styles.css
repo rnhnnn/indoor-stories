@@ -548,9 +548,11 @@ img {
 }
 
 .blog-index-list-item span {
+  display: inline-block;
   color: var(--highlight-color);
   opacity: 0.5;
   margin-right: 25px;
+  min-width: 98px;
 }
 
 .blog-index-list-item {
